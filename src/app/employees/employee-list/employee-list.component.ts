@@ -9,7 +9,7 @@ import {Employee} from '../shared/employee.model';
 export class EmployeeListComponent implements OnInit {
 
 employeeList:Employee[]
-  constructor(private empService:EmployeeService) { }
+  constructor(public empService:EmployeeService) { }
 
   ngOnInit() {
     var x=this.empService.getData();
